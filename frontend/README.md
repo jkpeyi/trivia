@@ -20,6 +20,9 @@ npm install
 
 ## Required Tasks
 
+set base url
+var baseUrl = 'http://localhost:5000';  in frontend/src/App.js
+
 ### Running Your Frontend in Dev Mode
 
 The frontend app was built using create-react-app. In order to run the app in development mode use `npm start`. You can change the script in the `package.json` file.

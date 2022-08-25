@@ -5,7 +5,14 @@ import FormView from './components/FormView';
 import QuestionView from './components/QuestionView';
 import Header from './components/Header';
 import QuizView from './components/QuizView';
+import $ from "jquery"
 
+var baseUrl = 'http://localhost:5000';
+$.ajaxSetup({
+    beforeSend: function(xhr, options) {
+        options.url = baseUrl + options.url;
+    }
+})
 class App extends Component {
   render() {
     return (
